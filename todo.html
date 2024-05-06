@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class= "head">
+            Todo List
+        </h2>
+        <div class="create-todo">
+            <input onkeypress="enterKey(event)" type="text" id="inputTodo" placeholder="Add some todo ...">
+            <button onclick="addTodo()">
+                <i class="bx bx-plus"></i>
+            </button>
+        </div>
+        <div id="task-list" class="task-list"></div>
+
+        <div class="foot">
+            <span>You have <span id="countPendingTasks">0</span>pending tasks</span>
+        <button onclick="clearAll()">Clear All</button>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
